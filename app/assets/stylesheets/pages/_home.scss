@@ -1,1 +1,27 @@
-// Specific CSS for your home-page
+// h1{
+//   font-family: 'Source Sans Pro', sans-serif;
+// }
+
+.banner{
+  width: 100%;
+  background-size: cover;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content{
+  color: white;
+  background-color: rgba(.25, .25, .25, 0.7);
+  padding: 81px;
+  width: 100%;
+  margin-top: -100px;
+}
+
+.first-box{
+  background-color: black;
+  padding: 150px;
+  h3{ margin: 0px !important;}
+}
