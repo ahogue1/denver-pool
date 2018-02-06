@@ -11,9 +11,10 @@
   position: relative;
   z-index:1000;
   width:100%;
-  a{ color: #878484; }
+  font-family: 'Montserrat', sans-serif;
+  a{ color: white; }
   a:hover{
-    color: white;
+    color: #878484;
     text-decoration: none;}
 }
 
