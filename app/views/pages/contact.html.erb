@@ -4,3 +4,20 @@
     <p>Find me in app/views/pages/contact.html.erb</p>
   </div>
 </div>
+    <%= simple_form_for @contact do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :first_name, label: "name" %>
+    <%= f.input :last_name, as: :string %>
+    <%= f.input :phone, as: :string %>
+    <%= f.input :email, as: :string  %>
+    <%= f.input :preference, as: :string  %>
+    <%= f.input :message, as: :text %>
+
+    <div>
+      </br>
+       <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+    </div>
+  <% end %>
+</div>
