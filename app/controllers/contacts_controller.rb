@@ -3,6 +3,8 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
 
+
+
   def index
     @contacts = Contact.all
   end
@@ -26,13 +28,26 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    @contact.request = request
-    if @contact.deliver
-      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
-    else
-      flash.now[:error] = 'Cannot send message.'
-      render :new
+    if @contact.save
+      ContactMailer.request2(@contact).deliver_now
     end
+
+    respond_to do |format|
+      if @contact.save
+        format.html {  redirect_to root_path, notice: 'Contact requested.' }
+        format.json { render :show, status: :created, location: @contact }
+      else
+        format.html { render :new }
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+      end
+    end
+
+    # if @contact.deliver
+    #   flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+    # else
+    #   flash.now[:error] = 'Cannot send message.'
+    #   render :new
+    # end
   end
 
   # PATCH/PUT /contacts/1
@@ -55,4 +70,5 @@ class ContactsController < ApplicationController
     def contact_params
       params.require(:contact).permit(:first_name, :last_name, :phone, :email, :message, :preference)
     end
+
 end
