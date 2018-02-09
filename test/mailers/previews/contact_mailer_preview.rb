@@ -5,7 +5,6 @@ class ContactMailerPreview < ActionMailer::Preview
   def request
     contact = Contact.first
     ContactMailer.request2(contact)
-
   end
 
 end

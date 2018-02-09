@@ -1,5 +1,12 @@
-<h1>Contact#request</h1>
+<h1><%=  "Hey hey, John! #{@contact.first_name.capitalize} wants to hear from you!" %></h1>
 
-<p>
-  <%=  @contact.first_name %>
-</p>
+<h3>
+  <ul>
+    <li>
+    <%=  "Customer's Name: #{@contact.first_name.capitalize} #{@contact.last_name.capitalize}" %></li>
+    <li><%=  "Phone Number: #{@contact.phone}" %></li>
+    <li><%=  "Email: #{@contact.email}" %></li>
+    <li><%=  "Prefered contact method: #{@contact.preference}" %></li>
+    <li><%=  "#{@contact.first_name.capitalize} says: #{@contact.message}" %></li>
+  </ul>
+</h3>
