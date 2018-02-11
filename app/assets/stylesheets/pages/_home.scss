@@ -42,3 +42,20 @@
   color: white;
   padding: 100px;
 }
+
+.btn{
+  background-color: $yellow;
+  border-color: #7a7474;
+  border-radius: 3px;
+  color: #204a54;
+  padding: 9px;
+  font-size: 18px;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.btn:hover{
+  background-color: #d6d064;;
+}
+
+#home-btn{ margin-top: 1em;}

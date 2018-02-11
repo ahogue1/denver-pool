@@ -1,0 +1,49 @@
+.banner_content_contact{
+  color: #e8e8e8;
+  background-color: rgba(.25, .25, .25, 0.7);
+  padding: 3em;
+  width: 100%;
+  text-align: center;
+}
+
+.form-box{
+  text-align: right;
+  font-size: 15px;
+  width: 28em !important;
+  margin: auto;
+
+
+  .input{
+    margin: 10px;
+  }
+  label{
+    margin: 5px;
+  }
+  input{
+    width: 20em;
+    padding: 2px;
+  }
+  .btn{
+    width: 8em;
+    margin-right: 5em;
+  }
+}
+
+#contact_message{
+  height: 160px;
+  width: 20em;
+  padding: 5px;
+}
+
+#contact_preference{
+  width: 20em;
+  color: black;
+}
+
+.select{
+  label{ margin-right: 10.5em;}
+}
+
+#contact_heading{
+  h1{ margin-left: 2em !important;}
+}

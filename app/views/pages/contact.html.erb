@@ -1,23 +1,24 @@
 <div class="banner" , style="background-image: url(<%= image_path("pool.jpg")%> );">
-  <div class="banner-content">
-    <h1>Denver Pool Management</h1>
-    <p>Find me in app/views/pages/contact.html.erb</p>
-  </div>
-</div>
-    <%= simple_form_for @contact do |f| %>
-    <%= f.error_notification %>
-    <%= f.input :first_name, label: "First Name", placeholder: "John" %>
-    <%= f.input :last_name, label: "Last Name", placeholder: "Swimmer"%>
-    <%= f.input :phone, placeholder: "303-333-3333" %>
-    <%= f.input :email, placeholder: "hello@mail.com"  %>
-    <%= f.input :preference, label: "Prefered Form of Contact:",  priority: [ "Email" ], collection: [ "Phone Call", "Email", "Text Message", "Any"] %>
-    <%= f.input :message, as: :text, placeholder: "What would like help with, best time to contact you, special requests, or anything else you think we should know." %>
+  <div class="banner_content_contact" id= "contact_heading">
+    <h1>Contact Us</h1>
+    <div class="form-box">
+      <%= simple_form_for @contact do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :first_name, label: "First Name", placeholder: "First Name" %>
+        <%= f.input :last_name, label: "Last Name", placeholder: "Last Name"%>
+        <%= f.input :phone, placeholder: "303-###-####" %>
+        <%= f.input :email, placeholder: "hello@mail.com"  %>
+        <%= f.input :preference, label: "Preferred Form of Contact:",  priority: [ "Email" ], collection: [ "Phone Call", "Email", "Text Message", "Any"] %>
+        <%= f.input :message, as: :text, placeholder: "What would like help with, best time to contact you, special requests, or anything else you think we should know." %>
 
-    <div>
-      </br>
-       <div class="form-actions">
-      <%= f.button :submit %>
+          <div>
+            </br>
+            <div class="form-actions">
+              <%= f.button :submit, value: "Submit" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
     </div>
-    </div>
-  <% end %>
+  </div>
 </div>
