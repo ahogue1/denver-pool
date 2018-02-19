@@ -56,3 +56,30 @@
 #message_box{
   label{margin-bottom: 10px;}
 }
+
+@media screen and (max-width: 780px){
+  .banner_content_contact {
+    padding: 1em;
+    label {
+      margin: 4px;
+      font-size: small;
+    }
+  }
+  .form-box {
+    text-align: left;
+    font-size: 12px;
+    width: 22em !important;
+  }
+
+  #contact-banner{
+    height: 830px;
+  }
+
+  #contact_heading h1 {
+    margin-left: 0em !important;
+  }
+
+  #submit-btn{
+    margin-left: 22%;
+  }
+}

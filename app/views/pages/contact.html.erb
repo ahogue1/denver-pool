@@ -1,4 +1,4 @@
-<div class="banner" , style="background-image: url(<%= image_path("pool.jpg")%> );">
+<div class="banner", id="contact-banner", style="background-image: url(<%= image_path("pool.jpg")%> );">
   <div class="banner_content_contact" id= "contact_heading">
     <h1>Contact Us</h1>
     <div class="form-box">
@@ -14,7 +14,7 @@
           <div>
             </br>
             <div class="form-actions">
-              <%= f.button :submit, value: "SUBMIT" %>
+              <%= f.button :submit, value: "SUBMIT", id: "submit-btn" %>
             </div>
           </div>
         <% end %>
