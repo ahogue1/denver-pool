@@ -31,3 +31,21 @@
 .footer-links a:hover {
   opacity: 0.2;
 }
+
+@media screen and (max-width: 780px){
+  .footer{
+    p{
+    font-size: small;
+    padding-left: 66px;
+    text-align: center;
+    padding-top: 10px;
+    }
+    .fa{
+      font-size: smaller;
+    }
+    .footer-links{
+      display: flex;
+      margin-left: -20px;
+    }
+  }
+}

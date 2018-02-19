@@ -1,5 +1,4 @@
 .banner_content_contact{
-  color: #e8e8e8;
   background-color: rgba(.25, .25, .25, 0.7);
   padding: 3em;
   width: 100%;
@@ -9,24 +8,27 @@
 .form-box{
   text-align: right;
   font-size: 15px;
-  width: 28em !important;
+  width: 29em !important;
   margin: auto;
-
+}
 
   .input{
     margin: 10px;
   }
+
   label{
     margin: 5px;
+    color: #e8e8e8;
   }
+
   input{
     width: 20em;
     padding: 2px;
   }
+
   .btn{
     width: 8em;
     margin-right: 5em;
-  }
 }
 
 #contact_message{
@@ -41,9 +43,16 @@
 }
 
 .select{
-  label{ margin-right: 10.5em;}
+  label{ margin-right: 12.5em;}
 }
 
 #contact_heading{
-  h1{ margin-left: 2em !important;}
+  h1{
+    margin-left: 2em !important;
+    color: #e8e8e8;
+  }
+}
+
+#message_box{
+  label{margin-bottom: 10px;}
 }

@@ -34,7 +34,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html {  redirect_to root_path, notice: 'Contact requested.' }
+        format.html {  redirect_to root_path, notice: "Your message has been sent, We'll be in contact soon" }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
