@@ -76,14 +76,16 @@
 }
 
 #home-btn{
- margin-left: 23%;
+  margin: auto;
+  margin-left: 23%;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .first-box {
-    padding-left: 68px;
-    padding-right: 44px;
+    padding-left: 45px;
+    padding-right: 26px;
+    text-align: justify;
   }
 
 .banner{
@@ -91,6 +93,9 @@
 }
 
 #services-box{
-  padding: 63px;
+    padding: 63px;
+    padding-left: 45px;
+    padding-right: 44px;
+    text-align: justify;
   }
 }
