@@ -9,7 +9,6 @@
 
   <!-- Right Navigation -->
   <div class="navbar-pool-right hidden-xs hidden-sm">
-    <!-- Become a chef is always there -->
     <%= link_to "About", about_path, class: "navbar-pool-item navbar-pool-link" %>
     <%= link_to "Contact", contact_path, class: "navbar-pool-item navbar-pool-link" %>
   </div>
@@ -19,10 +18,20 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-pool-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li>
+          <%= link_to about_path do %>
+            <%= t("About") %>
+          <% end %>
+        </li>
+          <li>
+          <%= link_to contact_path do %>
+            <%= t("Contact Us") %>
+          <% end %>
+        </li>
+        <li><a href="/#services-box" >Services</a></li>
       </ul>
     </div>
   </div>
 </div>
+
+

@@ -14,7 +14,7 @@
   font-family: 'Montserrat', sans-serif;
   a{ color: white; }
   a:hover{
-    color: #878484;
+    color: #d6d064;;
     text-decoration: none;}
 }
 
@@ -41,6 +41,7 @@
 .navbar-pool-item {
   cursor: pointer;
   padding: 0 20px;
+  :hover{ color: #d6d064;}
 }
 
 /* Navbar link */
@@ -49,7 +50,7 @@
   font-size: 14px;
 }
 .navbar-pool-link:hover {
-  color: #da552f;
+  color: $yellow;
   text-decoration: none;
 }
 
@@ -69,7 +70,7 @@
 }
 .navbar-pool-dropdown-menu li > a:hover {
   background: transparent !important;
-  color: black !important;
+  color: #d6d064 !important;
 }
 .navbar-pool-dropdown-menu:before {
   content: ' ';
