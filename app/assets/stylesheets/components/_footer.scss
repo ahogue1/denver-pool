@@ -1,11 +1,17 @@
+.footer-links .fa {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
 .footer{
   a {
-  color: $white ;
-  font-size: 25px;
+  color: $white;
   }
  p {
   color: $white;
   font-weight: lighter;
+  margin: 0;
  }
 }
 
@@ -23,13 +29,15 @@
   display: flex;
   align-items: center;
 }
-.footer-links a {
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
+
 .footer-links a:hover {
   color: #d6d064;
+  text-decoration: none;
+}
+.foot-phone{
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin-left: 1em;
 }
 
 @media screen and (max-width: 780px){
@@ -41,11 +49,16 @@
     padding-top: 10px;
     }
     .fa{
-      font-size: smaller;
+      font-size: 23px;
+      margin-bottom: 7px;
     }
     .footer-links{
-      display: flex;
+      display: block;
       margin-left: -20px;
     }
+  }
+
+  .foot-phone{
+    margin: 0;
   }
 }

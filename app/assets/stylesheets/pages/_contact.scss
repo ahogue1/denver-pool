@@ -1,8 +1,19 @@
 .banner_content_contact{
   background-color: rgba(.25, .25, .25, 0.7);
-  padding: 3em;
+  padding: 3em 7em;
+  margin: 0 18em;
   width: 100%;
   text-align: center;
+  h1{ font-size: 55px;}
+  h3{
+    display: inline;
+    color: white;
+  }
+  p{
+    color: white;
+    margin: 2em 0 1em ;
+    font-size: 18px;
+  }
 }
 
 .form-box{
@@ -31,6 +42,16 @@ input{
   width: 8em;
 }
 
+.contact-phone{
+  color: $yellow;
+  font-size: 24px;
+}
+
+.contact-phone:hover{
+  text-decoration: none;
+  color: #d6d064;
+}
+
 #contact-banner{
   height: 909px;
 }
@@ -52,7 +73,6 @@ input{
 
 #contact_heading{
   h1{
-    margin-left: 2em !important;
     color: #e8e8e8;
   }
 }
@@ -81,6 +101,7 @@ input{
 @media screen and (max-width: 780px){
   .banner_content_contact {
     padding: 1em;
+    h3{ font-size: 19px;}
     label {
       margin: 4px;
       font-size: small;
@@ -107,4 +128,6 @@ input{
   #submit-btn{
     margin-right: 0;
   }
+
+  .contact-phone{ font-size: 19px;}
 }

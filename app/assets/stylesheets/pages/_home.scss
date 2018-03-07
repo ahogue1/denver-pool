@@ -62,6 +62,12 @@
   padding-right: 11px;
 }
 
+ #phone-num{
+    display: block;
+    font-size: 2em;
+    color:$white;
+  }
+
 //-------Mobile view of home screen
 @media screen and (max-width: 780px){
   .banner-content{
@@ -95,4 +101,7 @@
     padding-right: 44px;
     text-align: justify;
   }
+
+#phone-num{ margin-left: 23%;}
+
 }
