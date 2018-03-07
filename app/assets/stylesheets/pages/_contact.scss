@@ -12,23 +12,23 @@
   margin: auto;
 }
 
-  .input{
-    margin: 10px;
-  }
+.input{
+  margin: 10px;
+}
 
-  label{
-    margin: 5px;
-    color: #e8e8e8;
-  }
+label{
+  margin: 5px;
+  color: #e8e8e8;
+  vertical-align: top;
+}
 
-  input{
-    width: 20em;
-    padding: 2px;
-  }
+input{
+  width: 20em;
+  padding: 2px;
+}
 
-  .btn{
-    width: 8em;
-    margin-right: 5em;
+.btn{
+  width: 8em;
 }
 
 #contact-banner{
@@ -61,6 +61,10 @@
   label{margin-bottom: 10px;}
 }
 
+#submit-btn{
+  margin-right: 8em;
+}
+
 @media screen and (max-width: 780px){
   .banner_content_contact {
     padding: 1em;
@@ -83,7 +87,11 @@
     margin-left: 0em !important;
   }
 
+  .form-actions{
+    text-align: center;
+  }
+
   #submit-btn{
-    margin-left: 22%;
+    margin-right: 0;
   }
 }

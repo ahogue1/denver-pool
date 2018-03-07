@@ -11,7 +11,7 @@
 }
 
 .banner-content{
-  color: #e8e8e8;
+  color: $white;
   background-color: rgba(.25, .25, .25, 0.7);
   padding: 81px;
   width: 100%;
@@ -36,7 +36,7 @@
   width: 1015px;
   border-radius: 3px;
   margin: auto;
-  color: white;
+  color: $white;
   padding: 100px;
 }
 

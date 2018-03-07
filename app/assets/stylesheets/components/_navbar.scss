@@ -12,7 +12,7 @@
   z-index:1000;
   width:100%;
   font-family: 'Montserrat', sans-serif;
-  a{ color: white; }
+  a{ color: $white; }
   a:hover{
     color: #d6d064;;
     text-decoration: none;}
@@ -41,6 +41,7 @@
 .navbar-pool-item {
   cursor: pointer;
   padding: 0 20px;
+  color: $white;
   :hover{ color: #d6d064;}
 }
 
@@ -70,7 +71,7 @@
 }
 .navbar-pool-dropdown-menu li > a:hover {
   background: transparent !important;
-  color: #d6d064 !important;
+  color: black !important;
 }
 .navbar-pool-dropdown-menu:before {
   content: ' ';
