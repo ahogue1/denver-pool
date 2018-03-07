@@ -65,6 +65,19 @@ input{
   margin-right: 8em;
 }
 
+.error, .error_notification {
+    display: block;
+    color: #e26d6d;
+}
+
+.error_notification{
+  text-align: center;
+}
+
+.alert{
+  margin-bottom: 0 !important;
+}
+
 @media screen and (max-width: 780px){
   .banner_content_contact {
     padding: 1em;

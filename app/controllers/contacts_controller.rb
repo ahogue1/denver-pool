@@ -34,11 +34,9 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html {  redirect_to root_path, notice: "Your message has been sent, We'll be in contact soon" }
-        format.json { render :show, status: :created, location: @contact }
+        format.html { redirect_to root_path, notice: "Your message has been sent, We'll be in contact soon" }
       else
-        format.html { render :new }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.html { render "pages/contact" }
       end
     end
 
