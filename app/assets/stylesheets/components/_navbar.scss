@@ -40,8 +40,9 @@
 /* Basic navbar item */
 .navbar-pool-item {
   cursor: pointer;
-  margin: 0 20px;
   color: $white;
+  font-size: 19px;
+  margin: 0 20px;
   :hover{ color: #d6d064;}
 }
 
@@ -85,3 +86,9 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.dropdown-toggle{
+  padding: 20px;
+}
+
+.navbar-pool-item{ margin: 0;}
