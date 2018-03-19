@@ -1,13 +1,24 @@
+<div class="title">
 <h1><%=  "Hey hey, John! #{@contact.first_name.capitalize} wants to hear from you!" %></h1>
+</div>
 
 <h3>
-  <ul>
-    <li>Subject: <%= @contact.subject %></li>
-    <li>
-    <%=  "Customer's Name: #{@contact.first_name.capitalize} #{@contact.last_name.capitalize}" %></li>
-    <li><%=  "Phone Number: #{@contact.phone}" %></li>
-    <li><%=  "Email: #{@contact.email}" %></li>
-    <li><%=  "Prefered contact method: #{@contact.preference}" %></li>
-    <li><%=  "#{@contact.first_name.capitalize} says: #{@contact.message}" %></li>
+  <div class="wrapper">
+    <ul>
+      <li class="subject"><%= @contact.first_name.capitalize%> is interested in: <%= @contact.subject %></li>
+      <div class="customer-box">
+        <li>
+        <%=  "Customer's Name: #{@contact.first_name.capitalize} #{@contact.last_name.capitalize}" %></li>
+        <li><%=  "Phone Number: #{@contact.phone}" %></li>
+        <li><%=  "Email: #{@contact.email}" %></li>
+        <li><%=  "Prefered contact method: #{@contact.preference}" %></li>
+        <li><%=  "#{@contact.first_name.capitalize}'s message: #{@contact.message}" %></li>
+
+        <p>(Call Your Aunt Jean Too)</p>
+      </div>
+    </div>
   </ul>
 </h3>
+
+
+<!-- Today Start with Styling the Mailer for John and checking the mobile views for the Contacts Page and then you'll be all done!!! -->
