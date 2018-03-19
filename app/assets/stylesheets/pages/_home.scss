@@ -17,12 +17,21 @@
   width: 100%;
   margin-top: -100px;
   text-align: center;
+  h1{
+    color: white;
+    font-size: 4em;
+  }
 }
 
 .first-box{
   background-color: #F4F4F4;
-  padding: 100px 10em 100px 10em;
-  h3{ margin-top: 0px !important;}
+  padding: 100px 18% ;
+  p{ font-size: 20px;}
+
+  h3{
+    font-size: 4em;
+    margin-top: 0px !important;
+  }
 }
 
 #services-image{
@@ -37,7 +46,7 @@
   border-radius: 3px;
   margin: auto;
   color: $white;
-  padding: 100px;
+  padding: 79px 55px;
 }
 
 .btn{
@@ -57,29 +66,43 @@
 
 #home-btn{
   width: auto;
-  margin-top: 1em;
+  margin-top: 1.2em;
   padding-left: 11px;
   padding-right: 11px;
 }
 
  #phone-num{
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     color:$white;
   }
 
+  #services-box{
+    h3{
+    font-size: 3.7em;
+    margin: 20px 0 15px;
+    color: white;
+    }
+
+    p{ font-size: 25px; }
+
+    li{
+      font-size: 20px;
+      padding-top: 12px;
+    }
+    ul{ font-weight: 300; }
+  }
+
 //-------Mobile view of home screen
-@media screen and (max-width: 780px){
+@media screen and (max-width: 720px){
   .banner-content{
-    padding-left: 1px;
+    padding: 60px;
     margin-top: -40px;
-  h1{ font-size: 35px;
-  padding-left: 20%;
+  h1{ font-size: 34px;
 }
 }
 
 #home-btn{
-  margin-left: 23%;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -88,6 +111,8 @@
     padding-left: 45px;
     padding-right: 26px;
     text-align: justify;
+    p{ font-size: 16px; }
+    h3{ font-size: 3em;}
   }
 
 .banner{
@@ -95,12 +120,15 @@
 }
 
 #services-box{
-    padding: 63px;
-    padding-left: 45px;
-    padding-right: 44px;
-    text-align: justify;
+    padding: 35px 45px;
+    h3{ font-size: 3em;}
+    ul{ padding-left: 16px; }
+    p{ font-size: 20px;}
+    li{ font-size: 16px;}
   }
 
-#phone-num{ margin-left: 23%;}
+#phone-num{
+  font-size: 27px;
+}
 
 }

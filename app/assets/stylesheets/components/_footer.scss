@@ -44,7 +44,7 @@
   .footer{
     p{
     font-size: small;
-    padding-left: 66px;
+    width: 50px;
     text-align: center;
     padding-top: 10px;
     }
@@ -60,5 +60,6 @@
 
   .foot-phone{
     margin: 0;
+    display: block;
   }
 }
