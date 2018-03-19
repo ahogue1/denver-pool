@@ -12,6 +12,7 @@
         <%= f.input :phone, placeholder: "303-###-####" %>
         <%= f.input :email, placeholder: "hello@mail.com"  %>
         <%= f.input :preference, label: "Preferred Form of Contact:",  priority: [ "Email" ], collection: [ "Phone Call", "Email", "Text Message", "Any"] %>
+        <%= f.input :subject, label: "I'm inquiring for:",  priority: [ "Email" ], as: :radio_buttons, collection: [ "Service Quote", "Repair Quote", "Other"], class: 'radio-btn', id: "rd-btns" %>
         <%= f.input :message, as: :text, placeholder: "What would like help with, best time to contact you, special requests, or anything else you think we should know." %>
 
           <div>
