@@ -12,7 +12,7 @@ class ContactMailer < ApplicationMailer
   def request2(contact)
     @contact = contact
 
-    mail to: "hogue.a@gmail.com", subject: "New Contact Request!"
+    mail to: "denverpoolmanagement@gmail.com", subject: "New Contact Request!"
   end
 
 end
