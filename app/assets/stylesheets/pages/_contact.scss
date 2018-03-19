@@ -101,7 +101,11 @@ input{
 
 .radio{ display: inline !important;}
 
-.contact_subject { margin: unset }
+.contact_subject {
+  margin: unset;
+  font-size: 13px;
+  padding: 6px;
+  }
 
 @media screen and (max-width: 780px){
   .banner_content_contact {
