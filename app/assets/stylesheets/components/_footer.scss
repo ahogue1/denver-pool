@@ -40,13 +40,19 @@
   margin-left: 1em;
 }
 
+.yam-footer{
+  display: flex;
+  align-items: center;
+  img{ height: 30px;}
+}
+
+
+
 @media screen and (max-width: 780px){
   .footer{
     p{
     font-size: small;
-    width: 50px;
     text-align: center;
-    padding-top: 10px;
     }
     .fa{
       font-size: 23px;
@@ -62,4 +68,5 @@
     margin: 0;
     display: block;
   }
+
 }
