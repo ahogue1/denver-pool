@@ -6,9 +6,11 @@
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="tel:3033458423" class="foot-phone"> Phone: 303-345-8423</a>
   </div>
-  <div class="yam-footer">
-    <p>Powered By</p>
-    <%= image_tag("yam.png")%>
-    <p>Yam</p>
-  </div>
+  <%= link_to "http://www.amyhogue.com/",  target: :_blank do %>
+    <div class="yam-footer">
+      <p>Powered By</p>
+      <%= image_tag("yam.png")%>
+      <p>Yam</p>
+    </div>
+  <% end %>
 </div>
